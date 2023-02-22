@@ -20,7 +20,7 @@ services:
       timeout: 30s
       retries: 10
   books-service:
-    image: pjcaiza/app-books:1.0.0
+    image: yiecheverria/app-books:1.0.0
     expose:
       - 9081
     deploy:
@@ -52,7 +52,7 @@ services:
       timeout: 20s
       retries: 20
   authors-service:
-    image: pjcaiza/app-authors:1.0.0
+    image: yiecheverria/app-authors:1.0.0
     expose:
       - 8000
     command: "python main.py"
